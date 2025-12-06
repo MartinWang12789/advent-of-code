@@ -40,12 +40,12 @@ def sum_invalids_any_pattern(file_name: str) -> int:
                         if length % modulo == 0:
                             sub_length = length // modulo
                             id_string = str(id)
-                            items = [id_string[i:i + sub_length] for i in range(0, length, sub_length)]
+                            sub_strings = [id_string[i:i + sub_length] for i in range(0, length, sub_length)]
 
-                            if all([item == items[0] for item in items]):
+                            if all([sub_string == sub_strings[0] for sub_string in sub_strings]):
                                 invalids_set.add(id)
                                 # print(f"debug: {id} added to set")
-                            # print(f"debug: {id}: sub_length: {sub_length} items: {items}")
+                            # print(f"debug: {id}: sub_length: {sub_length} sub_strings: {sub_strings}")
     
     invalids_sum = sum(invalids_set)
 
