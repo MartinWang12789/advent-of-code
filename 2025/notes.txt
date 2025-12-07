@@ -1,0 +1,14 @@
+Probably took about an hour total to install/setup git and vscode.
+
+Day 1 probably took about an hour (or a little more).
+Moderate difficulty anticipating modulo behavior, ended up with special handling for L ops.
+A more clever solution would be transforming L ops into R ops.
+
+Day 2 took about half an hour.
+Minor difficulty accounting for double counts.
+
+Day 3 took about half an hour.
+Little difficulty except for an off-by-one on the buffer.
+
+Day 4 took a little more than half an hour.
+Minor difficulty thinking through recursion.
