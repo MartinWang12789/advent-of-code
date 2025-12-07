@@ -1,5 +1,3 @@
-import copy
-
 from collections.abc import Callable
 
 
@@ -51,10 +49,10 @@ def basic_counting_method(grid: list[list[bool]]) -> tuple[int, list[list[bool]]
 
 def advanced_counting_method(grid: list[list[bool]]) -> tuple[int, list[list[bool]]]:
     # print("debug: beginning advanced counting method")
-    removable_rolls_count, next_grid = basic_counting_method(copy.deepcopy(grid))
-    if next_grid == grid:
-        return removable_rolls_count, next_grid
-    recursive_result = advanced_counting_method(next_grid)
+    removable_rolls_count, grid = basic_counting_method(grid)
+    if removable_rolls_count == 0:
+        return removable_rolls_count, grid
+    recursive_result = advanced_counting_method(grid)
     return recursive_result[0] + removable_rolls_count, recursive_result[1]
 
 
