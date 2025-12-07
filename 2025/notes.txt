@@ -10,6 +10,7 @@ Minor difficulty accounting for double counts.
 
 Day 3 took about half an hour.
 Little difficulty except for an off-by-one on the buffer.
+A more clever solution could do this in one pass.
 
 Day 4 took a little more than half an hour.
 Minor difficulty thinking through recursion.
@@ -23,7 +24,9 @@ Moderate difficulty framing part 2 correctly.
 Wanted to reuse earlier partial solution with a transformation.
 Ended up with a very literal approach due to cephalopod writing rules.
 The LLM was especially useless for this one.
+A more creative solution can use zip+comprehension instead of indices.
 
 Overall the LLM increased efficiency by around 10% I'd say.
 Mostly by saving time looking up syntax (although it did provide some bad syntax as well).
-Less useful than an intern and cannot be trusted.
+It can't be trusted - I still had to read through all the logic step-by-step.
+Not quite as useful as an intern (as I've heard it characterized).
