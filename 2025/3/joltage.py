@@ -5,7 +5,7 @@ def sum_joltage(file_name: str) -> int:
     for line in file:
         line_stripped = line.strip()
         length = len(line_stripped)
-        values = [int(line_stripped[i:i + 1]) for i in range(length)]
+        values = [int(c) for c in line_stripped]
 
         left_max = max(values[:length - 1])
         left_max_index = values.index(left_max)
@@ -24,7 +24,7 @@ def sum_twelve_joltage(file_name: str) -> int:
     for line in file:
         line_stripped = line.strip()
         length = len(line_stripped)
-        values = [int(line_stripped[i:i + 1]) for i in range(length)]
+        values = [int(c) for c in line_stripped]
 
         joltage_strings = []
         left_max_index = -1
