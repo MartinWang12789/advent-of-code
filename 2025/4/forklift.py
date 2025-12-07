@@ -3,14 +3,14 @@ from collections.abc import Callable
 
 def count_rolls(file_name: str, counting_method: Callable) -> int:
     grid = []
-    file = open(file_name, "r")
-    for line in file:
-        line_stripped = line.strip()
-        row = [c == "@" for c in line_stripped]
-        grid.append(row)
+    with open(file_name, "r") as file:
+        for line in file:
+            line_stripped = line.strip()
+            row = [c == "@" for c in line_stripped]
+            grid.append(row)
 
-    result = counting_method(grid)[0]
-    return result
+        result = counting_method(grid)[0]
+        return result
 
 
 def basic_counting_method(grid: list[list[bool]]) -> tuple[int, list[list[bool]]]:
