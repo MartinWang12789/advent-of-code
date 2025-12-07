@@ -49,8 +49,7 @@ def sum_weird_math(file_name: str) -> int:
         # print(f"Debug: column at {index}: {column}")
 
         # Closing case; operate and reset
-        if column[-1] in operators:
-            operator = column[-1]
+        if (operator := column[-1]) in operators:
             operands.append(int("".join(column[:-1])))
             if operator == "+":
                 math_solution = sum(operands)
