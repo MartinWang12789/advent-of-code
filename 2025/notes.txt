@@ -3,6 +3,7 @@ Probably took about an hour total to install/setup git and vscode.
 Day 1 probably took about an hour (or a little more).
 Moderate difficulty anticipating modulo behavior, ended up with special handling for L ops.
 A more clever solution would be transforming L ops into R ops.
+The LLM misunderstood the context from my filename.
 
 Day 2 took about half an hour.
 Minor difficulty accounting for double counts.
@@ -15,4 +16,14 @@ Minor difficulty thinking through recursion.
 
 Day 5 took about half an hour.
 Little difficulty except for a highly inefficient naive solution.
-The LLM autocompletion was surprisingly good at this one.
+The LLM was surprisingly good at this one.
+
+Day 6 took about an hour.
+Moderate difficulty framing part 2 correctly.
+Wanted to reuse earlier partial solution with a transformation.
+Ended up with a very literal approach due to cephalopod writing rules.
+The LLM was especially useless for this one.
+
+Overall the LLM increased efficiency by around 10% I'd say.
+Mostly by saving time looking up syntax (although it did provide some bad syntax as well).
+Less useful than an intern and cannot be trusted.
